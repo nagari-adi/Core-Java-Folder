@@ -1,0 +1,32 @@
+1.1 Prompt user , how many points to plot?
+Create suitable array , to store Point2D type of references.
+Point2D[] points=new Point2D[sc.nextInt()];
+boolean exit=false;
+int noOfPointsPlotted=0;
+while(!exit)
+{
+   sop("Menu :");
+   sop("Choose ");
+   switch(sc.nextInt())
+   {
+      case 1 : if(noOfPointsPlotted < points.length)
+      {
+          sop(index x y);
+          int index=sc.nextInt(); x=sc.nextInt()...
+          //index >= 0 n < length
+           points[index]=new Point2D(x,y);
+           noOfPointsPlotted++;
+      }
+else : display err mesg
+      break;
+      case 4: exit=true;
+      break;
+
+    case 2 : display plotted points
+    for(Point2D p : points)
+     if(p != null)
+      sop(p.show());
+
+   }
+}
+
